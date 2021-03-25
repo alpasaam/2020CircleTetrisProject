@@ -81,7 +81,7 @@ public class Tetris extends JPanel{
 	private int currentPiece; //Indexes the current falling piece.
 	private int rotation; //Represents the current angle of the current falling piece.
 	private ArrayList<Integer> nextPieces = new ArrayList<Integer>(); //Acts as a queue in which all of the following pieces are placed in order.
-	private long score; //Holds the score as a long value in case the player's score increases over the maximum that an integer can hold.
+	private int score; //Holds the score as a long value in case the player's score increases over the maximum that an integer can hold.
 	private Color[][] well; //Holds the colors of the well in an array for easy access (will also be used to check for gaps).
 
 	//Creates a black and gray border around the well and initializes a new falling piece.
