@@ -17,7 +17,7 @@ public class Game {
 		f.setSize(12*26+10, 26*23+25);
 		f.setVisible(true);
 
-		final Tetris game = new Tetris();
+		Tetris game = new Tetris();
 		game.init();
 		f.add(game);
 
