@@ -10,10 +10,6 @@ import javax.swing.JPanel;
 
 public class TetrisTester {
   public static void main(String[] args){
-
-    /*JFrame is used to create a window that appears on the player's screen, labeled "Tetris" with given dimensions.
-      To satisfy the Java compiler, a so-called "close operation" has to be set,
-      which simply is set to terminate the program when the user closes that window.*/
     JFrame f = new JFrame("Tetris");
     f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     f.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -26,11 +22,8 @@ public class TetrisTester {
     //source of input
     f.addKeyListener(new KeyListener(){
 
-      /*makes sure that pressing E will not affect the key detected.*/
       public void keyTyped(KeyEvent e){}
 
-      /*The following allows the player to rotate and move the falling pieces, one at a time,
-        as well as dropping them to the bottom. These functionalities are possible using the arrow keys and the space bar.*/
       public void keyPressed(KeyEvent e){
         switch (e.getKeyCode()){
         case KeyEvent.VK_UP:
